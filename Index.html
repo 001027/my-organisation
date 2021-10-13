@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JADAVI FOOD PARCEL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div id ="header">
+ <h1>info@JADAVI FOOD PARCEL.co.za</h1> 
+ </div>
+</header>
+<div id ="nav">
+<ul>
+   <img src="Images/logo.jpg" width=150 height=80/>
+  <li><a href="Donation.html">Donate/Support</a></li>
+  <li><a href="Products.html">Products</a></li>
+  <li><a href="ContactUs.html">Contact Us</a></li>
+  <li><a href="AboutUs.html">About Us</a></li>
+  <li><a href="index.html">Home</a></li>
+</ul>
+
+</div>
+<div id="h1">
+<div id="topToBottom">
+<br>
+<h1>WELCOME TO JADAVI FOOD PARCEL</h1>
+<br>
+<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vulputate eu scelerisque felis imperdiet proin.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vulputate eu scelerisque felis imperdiet proin.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vulputate eu scelerisque felis imperdiet proin </P>
+<br>
+<a href="AboutUs.html" class="button">About Us</a></button>
+<button class="button2">Get involved</button>
+</div>
+</div>
+<br>
+<br>
+
+<div id ="Container">
+<div class="slideshow-container">
+<div class="mySlides">
+
+  <q> NGO brings prosperity and build civilazation.</q>
+  <p class="author">- John Keats</p>
+    
+</div>
+
+<div class="mySlides">
+  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+  <p class="author">- Ernest Hemingway</p>
+</div>
+
+<div class="mySlides">
+  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+  <p class="author">- Thomas A. Edison</p>
+</div>
+<div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+<div>
+<div>
+<div class="row">
+  <div class="column">
+    <img src="images/ww.jpg" style="width:40%">
+    <img src="images/yh.jpg" style="width:40%">
+	</div>
+	<img src="images/bx.png" style="width:10%">
+     <img src="images/chc.png" style="width:17%">
+	 <img src="images/sas.png" style="width:10%">
+	</div>
+  
+
+</div>
+
+<div class="footer">
+  <p style="width:100%">Website was designed by JAVIDA</p>
+</div>
+</body>
+</html>
